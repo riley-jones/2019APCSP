@@ -2,14 +2,19 @@ function append (message) {
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
     
     
-    
-    var lett = message.charAt(0);
-    var currLetterIndex = alphabet.indexOf(lett);
+    for(var i=0; i < message.length; i++) {
 
-    var imgName = currLetterIndex;
+        var lett = message.charAt(i);
+        var currLetterIndex = alphabet.indexOf(lett);
 
-    console.log(imgName);
+        var imgName = "L_" + currLetterIndex + ".png";
+        
+        console.log(imgName);
+
+        
+    }
+
 
 }
 
-append("b");
+append("car");
