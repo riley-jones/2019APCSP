@@ -8,10 +8,12 @@ function append (message) {
         var currLetterIndex = alphabet.indexOf(lett);
 
         var imgName = "L_" + currLetterIndex + ".png";
+
+        $(showLett).append 
         
         console.log(imgName);
 
-        
+
     }
 
 
