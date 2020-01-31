@@ -9,14 +9,23 @@ function append (message) {
 
         var imgName = "L_" + currLetterIndex + ".png";
 
-        $(showLett).append 
-        
+        var img = new Image();
+        var div = document.getElementById('imgName');
+ 
+ 
+img.onload = function() {
+ 
+  div.innerHTML += '<img src="'+img.src+'" />'; 
+ 
+};
+ 
+ 
+img.src = 'imgName';
+
         console.log(imgName);
 
 
-    }
-
-
+    }   
 }
 
 append("car");
