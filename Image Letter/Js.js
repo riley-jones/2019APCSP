@@ -8,14 +8,24 @@ function append (message) {
         var currLetterIndex = alphabet.indexOf(lett);
 
         var imgName = "L_" + currLetterIndex + ".png";
-
+        
         $("#final").append("<img src='Images/"+imgName+"'>");
 
-        var message = $('#ui').val();
 
         console.log(imgName);
 
     }   
 }
 
-append('message');
+$("#ui").keydown(
+    function(){
+        
+        var userInput = $("#ui"). val();
+        
+            $(".final").empty();
+         
+            append(userInput);
+
+    }
+);
+
