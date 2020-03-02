@@ -1,6 +1,8 @@
 function append (message) {
     var alphabet = "abcdefghijklmnopqrstuvwxyz";
     
+    console.log(message);
+
     for(var i=0; i < message.length; i++) {
 
         var lett = message.charAt(i);
@@ -20,9 +22,11 @@ function append (message) {
 $("#ui").keydown(
     function(){
         
+        console.log("pressedkey");
+
         var userInput = $("#ui"). val();
         
-            $(".final").empty();
+            $("#final").empty();
          
             append(userInput);
 
